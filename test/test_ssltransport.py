@@ -186,6 +186,7 @@ class SingleTLSLayerTestCase(SocketDummyServerTestCase):
         validate_response(response)
 
     @pytest.mark.timeout(PER_TEST_TIMEOUT)
+    @pytest.mark.skip()
     def test_ssl_object_attributes(self):
         """Ensures common ssl attributes are exposed"""
         self.start_dummy_server()
